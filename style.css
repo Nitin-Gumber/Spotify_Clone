@@ -1,0 +1,126 @@
+/* fonts links */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+/* starting Navigation */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 1.2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.logo img {
+    width: 4.4rem;
+    padding: 0 0.8rem;
+}
+
+/* Ending Navigation */
+
+/* Starting banner with songslist */
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 75%;
+    margin: 4rem auto;
+    font-family: 'varela round', sans-serif;
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+    flex-direction: column;
+
+}
+
+#myProgressBar {
+    width: 70rem;
+    text-align: center;
+}
+
+.songItemContainer {
+    margin-top: 4rem;
+}
+
+.songItem {
+    height: 2.5rem;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.songItem img {
+    width: 2rem;
+    margin: 0 1rem 0;
+    border-radius: 0.9rem;
+}
+
+.timestamp {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+/* Endings banner with songslist  */
+
+/* Starting bottom play and pause button  */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    flex-direction: column;
+    height: 4rem;
+
+}
+
+.icons {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 4rem;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity is ease-in-out 1s;
+}
+/* Endings bottom play and pause button */
